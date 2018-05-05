@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beer Finder</title>
+</head>
+<body>
+    <!-- Main Page -->
+    <main>
+        <h1>Beer Finder</h1>
+    </main>
+
+    <section>
+
+        <form method="POST" action="#"  id="beer-form">
+
+        <div class="quizIntro">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, tenetur sequi voluptatum distinctio nihil suscipit iusto recusandae alias soluta impedit, illum hic cupiditate nisi quas est inventore dolorum adipisci fugiat? Earum, assumenda. Hic corrupti explicabo eligendi delectus esse quaerat rerum?</p>
+
+            <button class="start">Start Quiz</button>
+        </div>
+
+        
+
+    <!-- Question 1 -->
+        <div class="questionWrapper question1">
+            <h3>What season is it?</h3>
+            
+                <ul>
+                    <li>
+                        <input type="radio" name="season" id="summer" value="corona">
+                        <label for="summer">Summer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="season" id="fall" value="guinness">
+                        <label for="fall">Fall</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="season" id="winter" value="stella">
+                        <label for="winter">Winter</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="season" id="spring" value="hoegaarden">
+                        <label for="spring">Spring</label>
+                    </li>
+                </ul>
+
+                <button class="next1">Next Question</button>
+        </div>
+
+    <!-- Question 2 -->
+        <div class="questionWrapper question2">
+            <h3>What are you eating with the beer?</h3>
+                <ul>
+                    <li>
+                        <input type="radio" name="food" id="risotto" value="stella">
+                        <label for="">Roasted Tomato Risotto, with toasted pine nuts</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="food" id="fishChips" value="guinness">
+                        <label for="">Fish and Chips</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="food" id="lobster" value="hoegaarden">
+                        <label for="">Lobster</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="food" id="tacos" value="corona">
+                        <label for="">Tacos</label>
+                    </li>
+                </ul>
+
+                <button class="next2">Next Question</button>
+                
+        </div>
+
+    <!-- Question 3 -->
+        <div class="questionWrapper question3">
+            <h3>What are you doing while drinking this beer?</h3>
+                <ul>
+                    <li>
+                        <input type="radio" name="activity" id="game" value="guinness">
+                        <label for="">Chasing the end of a rainbow</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="activity" id="friends" value="hoegaarden">
+                        <label for="">Partying</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="activity" id="" value="corona">
+                        <label for="">Looking at the sunrise</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="activity" id="bigDate" value="stella">
+                        <label for="">On a big date</label>
+                    </li>
+                </ul>
+
+                <button class="next3">Next Question</button>
+                
+        </div>
+
+    <!-- Question 4 -->
+        <div class="questionWrapper question4">
+            <h3>Where will you be enjoying this beer?</h3>
+                <ul>
+                    <li>
+                        <input type="radio" name="where" id="restaurant" value="stella">
+                        <label for="">Fancy restaurant</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="where" id="shower" value="hoegaarden">
+                        <label for="">In the shower</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="where" id="pub" value="guinness">
+                        <label for="">At a pub</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="where" id="beach" value="corona">
+                        <label for="">On a beach</label>
+                    </li>
+                </ul>                
+        </div>
+
+        <input type="submit" class="submitButton">
+        
+    </form>
+
+    </section>
+
+    <section class="result"></section>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
