@@ -33,6 +33,7 @@ $(function () {
 
     //hides all questions at beginning
     $('.questionWrapper').hide();
+    $('.yourBeer').hide();
     
     //once start quiz button is clicked, hide quizIntro, show question1
     $('.start').on('click', function (e) {
@@ -89,7 +90,8 @@ $(function () {
         //once start quiz button is clicked, hide question4, show winning beer, 
         e.preventDefault();
         $('.question5').hide();
-        $('section').fadeIn();
+        $('.yourBeer').fadeIn();
+        
 
         //variables made for each question, records the value of the users answer
         const where = $('input[name=where]:checked').val();
@@ -154,24 +156,36 @@ $(function () {
         const randomBeer = winners[Math.floor(winners.length * Math.random())];
 
         console.log(randomBeer);
-        
-        if (randomBeer == 'ace') { result2 = "I don't think you studied." };
-        if (randomBeer == 'mgd') { result2 = "You need to spend more time. Try again." };
-        if (randomBeer == 'pabst') { result2 = "I think you could do better. Try again." };
-        if (randomBeer == 'heineken') { result2 = "So close. Try again." };
+
+
+        //sets randomBeer equal to finalBeer and has corresponsing 
+        if (randomBeer == 'ace') { 
+            finalBeer = "Ace Hill",
+            finalBeerWhy = "You're a minimalist, you like simple, Ace Hill is simple. Enjoy" };
+
+        if (randomBeer == 'mgd') { 
+            finalBeer= "Miller Genuine Draft", 
+            finalBeerWhy = "You live the street life and dont take no shit, enoy an MGD" };
+
+        if (randomBeer == 'pabst') { 
+            finalBeer = "Pabst Blue Ribbon", 
+            finalBeerWhy = "You're a hipster and like hipster shit. So you should have a Pabst" };
+
+        if (randomBeer == 'heineken') {
+            finalBeer ="Heineken", 
+            finalBeerWhy = "You like realiable shit, you're a professional, enjoy your Heineken." 
+        };
 
         
-
-        
-
-        //prints result to page
-        // $('.result').html(`${beerBrand}`)
-        $('.result').html(`${randomBeer}!`)
-        console.log(randomBeer);
-
-
-        $('.result').html(`${randomBeer} + ${result2} `)
+        $('.beerPara').html(`You should have a ${finalBeer}! ${finalBeerWhy}`)
         console.log(randomBeer + result2);
+
+        $('.reset').on('click', function (e) {
+            e.preventDefault();
+            console.log('reset');
+            window.location.reload(true);
+
+        }); //FORM RESET
         
     
     });//end of form submit

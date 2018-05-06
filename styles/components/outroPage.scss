@@ -1,0 +1,38 @@
+.yourBeer {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        color: $yellow;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.resultText {
+    width: 40%;
+    margin-right: 5%;
+    
+}
+
+.resultImage {
+    width: 60%;
+    img {
+        width: 100%;
+    }
+}
+
+
+button.reset {
+    width: 200px;
+    height: 50px;
+    @include fontSize(18);
+    color: $black;
+    background: $yellow;
+    border: none;
+}
