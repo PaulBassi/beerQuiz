@@ -1,0 +1,43 @@
+
+
+/* QUIZ INTRO STYLES */
+
+.quizIntro {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        color: $yellow;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.introStart {
+    width: 40%;
+    margin-right: 5%;
+    
+}
+
+.introImage {
+    width: 60%;
+}
+
+.introImage img {
+    width: 100%;
+}
+
+button.start {
+    width: 200px;
+    height: 50px;
+    @include fontSize(18);
+    color: $black;
+    background: $yellow;
+    border: none;
+}
+

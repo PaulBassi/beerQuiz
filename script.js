@@ -155,7 +155,10 @@ $(function () {
 
         console.log(randomBeer);
         
-        const finalResult = randomBeer
+        if (randomBeer == 'ace') { result2 = "I don't think you studied." };
+        if (randomBeer == 'mgd') { result2 = "You need to spend more time. Try again." };
+        if (randomBeer == 'pabst') { result2 = "I think you could do better. Try again." };
+        if (randomBeer == 'heineken') { result2 = "So close. Try again." };
 
         
 
@@ -165,16 +168,11 @@ $(function () {
         // $('.result').html(`${beerBrand}`)
         $('.result').html(`${randomBeer}!`)
         console.log(randomBeer);
+
+
+        $('.result').html(`${randomBeer} + ${result2} `)
+        console.log(randomBeer + result2);
         
-        
-        console.log(``);
-        
-
-
-
-        
-
-
-
+    
     });//end of form submit
 });//end of document ready

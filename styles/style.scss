@@ -1,0 +1,11 @@
+@mixin fontSize($scale) {
+  font-size: $scale * 1px;
+  font-size: ($scale / 10) * 1rem;
+}
+@import "setup.scss";
+@import "components/global.scss";
+@import "typography.scss";
+@import "components/introPage.scss";
+@import "components/questionPage.scss";
+@import "components/result.scss";
+

@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Poppins', sans-serif;
+    @include fontSize(40);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    @include fontSize(20);
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    @include fontSize(20);    
+}
+
