@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Beer Finder</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
         <form method="POST" action="#"  id="beer-form">
 
         <div class="quizIntro">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, tenetur sequi voluptatum distinctio nihil suscipit iusto recusandae alias soluta impedit, illum hic cupiditate nisi quas est inventore dolorum adipisci fugiat? Earum, assumenda. Hic corrupti explicabo eligendi delectus esse quaerat rerum?</p>
+            <p>Answer the following questions and we'll help you pick a beer.</p>
 
             <button class="start">Start Quiz</button>
         </div>
@@ -26,24 +27,24 @@
         
     <!-- Question 1 -->
         <div class="questionWrapper question1">
-            <h3>What season is it?</h3>
+            <h3>Where can you be found on a Friday night?</h3>
             
                 <ul>
                     <li>
-                        <input type="radio" name="season" id="summer" value="corona">
-                        <label for="summer">Summer</label>
+                        <input type="radio" name="where" id="sudForno" value="heineken">
+                        <label for="summer">At Sud Forno</label>
                     </li>
                     <li>
-                        <input type="radio" name="season" id="fall" value="guinness">
-                        <label for="fall">Fall</label>
+                        <input type="radio" name="where" id="netflix" value="ace">
+                        <label for="fall">Netflix and a Cold One</label>
                     </li>
                     <li>
-                        <input type="radio" name="season" id="winter" value="stella">
-                        <label for="winter">Winter</label>
+                        <input type="radio" name="where" id="raptors" value="mgd">
+                        <label for="winter">If the Raps are playing, at a sports bar. If they aren't, at a sports bar</label>
                     </li>
                     <li>
-                        <input type="radio" name="season" id="spring" value="hoegaarden">
-                        <label for="spring">Spring</label>
+                        <input type="radio" name="where" id="boardGames" value="pabst">
+                        <label for="spring">Any themed bar that has videos games or board games</label>
                     </li>
                 </ul>
 
@@ -52,23 +53,23 @@
 
     <!-- Question 2 -->
         <div class="questionWrapper question2">
-            <h3>What are you eating with the beer?</h3>
+            <h3>Which of these sounds the most appetizing to you right now</h3>
                 <ul>
                     <li>
-                        <input type="radio" name="food" id="risotto" value="stella">
-                        <label for="">Roasted Tomato Risotto, with toasted pine nuts</label>
+                        <input type="radio" name="food" id="tacos" value="mgd">
+                        <label for="">Braised Pulled Pork tacos on a corn tortilla with pico da Gallo</label>
                     </li>
                     <li>
-                        <input type="radio" name="food" id="fishChips" value="guinness">
-                        <label for="">Fish and Chips</label>
+                        <input type="radio" name="food" id="fishChips" value="ace">
+                        <label for="">Beer battered fish and chips served in a newspaper cone with a side of malt vinegar</label>
                     </li>
                     <li>
-                        <input type="radio" name="food" id="lobster" value="hoegaarden">
-                        <label for="">Lobster</label>
+                        <input type="radio" name="food" id="lobster" value="heineken">
+                        <label for="">Lobster basking in lemon herb butter with a side of mashed potatoes</label>
                     </li>
                     <li>
-                        <input type="radio" name="food" id="tacos" value="corona">
-                        <label for="">Tacos</label>
+                        <input type="radio" name="food" id="risotto" value="pabst">
+                        <label for="">Roasted Tomato Risotto, with toasted pine nuts-hipster</label>
                     </li>
                 </ul>
 
@@ -78,23 +79,23 @@
 
     <!-- Question 3 -->
         <div class="questionWrapper question3">
-            <h3>What are you doing while drinking this beer?</h3>
+            <h3>What’s your preferred means of transportation?</h3>
                 <ul>
                     <li>
-                        <input type="radio" name="activity" id="game" value="guinness">
-                        <label for="">Chasing the end of a rainbow</label>
+                        <input type="radio" name="transportation" id="game" value="ace">
+                        <label for="">Walking, gotta get my steps</label>
                     </li>
                     <li>
-                        <input type="radio" name="activity" id="friends" value="hoegaarden">
-                        <label for="">Partying</label>
+                        <input type="radio" name="transportation" id="friends" value="pabst">
+                        <label for="">Bicycle, rain or shine</label>
                     </li>
                     <li>
-                        <input type="radio" name="activity" id="" value="corona">
-                        <label for="">Looking at the sunrise</label>
+                        <input type="radio" name="transportation" id="driving" value="heineken">
+                        <label for="driving">I drive myself or Uber it… these shoes weren’t made for walking</label>
                     </li>
                     <li>
-                        <input type="radio" name="activity" id="bigDate" value="stella">
-                        <label for="">On a big date</label>
+                        <input type="radio" name="transportation" id="bigDate" value="mgd">
+                        <label for="">TTC like a true Torontonian</label>
                     </li>
                 </ul>
 
@@ -102,29 +103,55 @@
                 
         </div>
 
-    <!-- Question 4 -->
+        <!-- Question 4 -->
         <div class="questionWrapper question4">
-            <h3>Where will you be enjoying this beer?</h3>
-                <ul>
-                    <li>
-                        <input type="radio" name="where" id="restaurant" value="stella">
-                        <label for="">Fancy restaurant</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="where" id="shower" value="hoegaarden">
-                        <label for="">In the shower</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="where" id="pub" value="guinness">
-                        <label for="">At a pub</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="where" id="beach" value="corona">
-                        <label for="">On a beach</label>
-                    </li>
-                </ul>   
+            <h3>How would you describe your sense of style?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="fashion" id="restaurant" value="mgd">
+                    <label for="">You think Jordan’s are appropriate footwear for all occasions</label>
+                </li>
+                <li>
+                    <input type="radio" name="fashion" id="shower" value="ace">
+                    <label for="">Who needs colors?</label>
+                </li>
+                <li>
+                    <input type="radio" name="fashion" id="pub" value="pabst">
+                    <label for="">Your eyeglasses have a prescription of 0 and you traded in your iPod touch for a Walkman</label>
+                </li>
+                <li>
+                    <input type="radio" name="fashion" id="beach" value="heineken">
+                    <label for="">You would never leave your house in sweats and are offended by those who do</label>
+                </li>
+            </ul>
+        
+            <button class="next4">Next Question</button>
+        
+        </div>
 
-                <input type="submit" class="submitButton">
+    <!-- Question 5 -->
+        <div class="questionWrapper question5">
+            <h3>Out of the people below, who would you choose to drink with?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="drinkingBuddy" id="restaurant" value="heineken">
+                    <label for="">Neil Degrasse Tyson</label>
+                </li>
+                <li>
+                    <input type="radio" name="drinkingBuddy" id="shower" value="mgd">
+                    <label for="">Cardi B</label>
+                </li>
+                <li>
+                    <input type="radio" name="drinkingBuddy" id="pub" value="ace">
+                    <label for="">Marie Kondo</label>
+                </li>
+                <li>
+                    <input type="radio" name="drinkingBuddy" id="beach" value="pabst">
+                    <label for="">Ernest Hemingway</label>
+                </li>
+            </ul>   
+
+            <input type="submit" class="submitButton">
         </div>
 
         

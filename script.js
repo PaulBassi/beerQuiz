@@ -1,10 +1,10 @@
 //new object called counter that keeps track of how many user answers corespond to their respective beers
 
 let counter = {
-    corona: 0,
-    hoegaarden: 0,
-    stella: 0,
-    guinness: 0
+    ace: 0,
+    mgd: 0,
+    pabst: 0,
+    heineken: 0
 }
 
 
@@ -13,16 +13,16 @@ console.log(counter);
 //object called results that stores beer names and their corresponding descriptions
 
 const results = {
-    corona: {
+    ace: {
         description: `Have a Corona!`
     },
-    hoegaarden: {
+    mgd: {
         description: `Have a Hoegaarden!`
     },
-    Stella: {
+    pabst: {
         description: `Have a Stella!`
     },
-    Guinness: {
+    heineken: {
         description: `Have a Guinness!`
     }
 }
@@ -71,6 +71,15 @@ $(function () {
         $('.question4').fadeIn();
     });
 
+    //once start quiz button is clicked, hide question3, show question4
+    $('.next4').on('click', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        $('.question4').hide();
+        $('.question5').fadeIn();
+    });
+
     
     
 
@@ -79,35 +88,37 @@ $(function () {
      
         //once start quiz button is clicked, hide question4, show winning beer, 
         e.preventDefault();
-        $('.question4').hide();
+        $('.question5').hide();
         $('section').fadeIn();
 
         //variables made for each question, records the value of the users answer
-        const season = $('input[name=season]:checked').val();        
-        const food = $('input[name=food]:checked').val();
-        const activity = $('input[name=activity]:checked').val();
         const where = $('input[name=where]:checked').val();
-        console.log(season, food, activity, where);
+        const food = $('input[name=food]:checked').val();
+        const transportation = $('input[name=transportation]:checked').val();     
+        const fashion = $('input[name=fashion]:checked').val();
+        const drinkingBuddy = $('input[name=drinkingBuddy]:checked').val();
+        
+        console.log(where, food, transportation, fashion, drinkingBuddy);
 
         let userInput = [
-            season, food, activity, where
+            where, food, transportation, fashion, drinkingBuddy
         ]
 
         
         for (let i = 0; i < userInput.length; i++) {
-        if (userInput[i] === 'corona') {    
-            counter.corona++;
+        if (userInput[i] === 'ace') {    
+            counter.ace++;
         }    
-        else if (userInput[i] === 'hoegaarden') 
+        else if (userInput[i] === 'mgd') 
         {
-            counter.hoegaarden++;
+            counter.mgd++;
         }
-        else if (userInput[i] === 'stella') 
+        else if (userInput[i] === 'pabst') 
         {
-            counter.stella++;
+            counter.pabst++;
         }
-        else if (userInput[i] === 'guinness') {
-            counter.guinness++;
+        else if (userInput[i] === 'heineken') {
+            counter.heineken++;
         }
         }
 
@@ -144,7 +155,7 @@ $(function () {
 
         console.log(randomBeer);
         
-
+        const finalResult = randomBeer
 
         
 
@@ -153,7 +164,10 @@ $(function () {
         //prints result to page
         // $('.result').html(`${beerBrand}`)
         $('.result').html(`${randomBeer}!`)
+        console.log(randomBeer);
         
+        
+        console.log(``);
         
 
 
