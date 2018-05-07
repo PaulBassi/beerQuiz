@@ -1,11 +1,11 @@
-.question1 {
-    display: flex;
-    flex-direction: column;
+.questionWrapper {
+  height: 900px;
 }
 
 .questionWrapper h3 {
     color: $yellow;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .questionTextImage {
@@ -25,6 +25,10 @@
             @include fontSize(12);
             margin-bottom: 5%;
             display: block;
+            transition: 0.5s;
+        }
+        li:hover {
+          color: $yellow;
         }
     }
 }
@@ -38,12 +42,13 @@
 
 
 button.next1, button.next2, button.next3, button.next4, input.submitButton{
-    width: 180px;
-    height: 40px;
+    width: 220px;
+    height: 50px;
     @include fontSize(16);
     color: $black;
     background: $yellow;
     border: none;
+    margin-top: 5%;
 }
 
 
@@ -68,11 +73,14 @@ label::before {
   margin-right: 10px;
   margin-left: -43px;
   margin-bottom: none;
+  transition: 0.5s;
 }
 
-label {
-  margin-bottom: 5px;
+label:hover:before {
+  border: 5px solid $yellow;
 }
+
+
 
 input[type=radio]:checked ~ ::before {
   background: $yellow }

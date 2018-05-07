@@ -141,7 +141,7 @@ body {
 
 @media only screen and (max-width: 920px) {
   .wrapper {
-    width: 95%; } }
+    width: 90%; } }
 
 h1 {
   font-family: 'Poppins', sans-serif;
@@ -203,8 +203,8 @@ h3 {
   width: 100%; }
 
 button.start {
-  width: 160px;
-  height: 40px;
+  width: 180px;
+  height: 50px;
   font-size: 16px;
   font-size: 1.6rem;
   color: #1b1b1e;
@@ -231,18 +231,13 @@ button.start {
   .introImage {
     width: 80%; } }
 
-.question1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+.questionWrapper {
+  height: 900px; }
 
 .questionWrapper h3 {
   color: #d5a021;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 5%; }
 
 .questionTextImage {
   display: -webkit-box;
@@ -264,7 +259,12 @@ button.start {
       font-size: 12px;
       font-size: 1.2rem;
       margin-bottom: 5%;
-      display: block; }
+      display: block;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    .questionText ul li:hover {
+      color: #d5a021; }
 
 .questionImage {
   width: 60%; }
@@ -272,13 +272,14 @@ button.start {
     width: 100%; }
 
 button.next1, button.next2, button.next3, button.next4, input.submitButton {
-  width: 180px;
-  height: 40px;
+  width: 220px;
+  height: 50px;
   font-size: 16px;
   font-size: 1.6rem;
   color: #1b1b1e;
   background: #d5a021;
-  border: none; }
+  border: none;
+  margin-top: 5%; }
 
 input[type="radio"] {
   visibility: hidden;
@@ -297,10 +298,13 @@ label::before {
   position: relative;
   margin-right: 10px;
   margin-left: -43px;
-  margin-bottom: none; }
+  margin-bottom: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
-label {
-  margin-bottom: 5px; }
+label:hover:before {
+  border: 5px solid #d5a021; }
 
 input[type=radio]:checked ~ ::before {
   background: #d5a021; }
@@ -377,14 +381,14 @@ input[type=radio]:checked ~ ::before {
     width: 100%; }
 
 button.reset {
-  width: 200px;
+  width: 220px;
   height: 50px;
   font-size: 18px;
   font-size: 1.8rem;
   color: #d5a021;
   background: #1b1b1e;
   border: none;
-  margin-top: 20%; }
+  margin-top: 5%; }
 
 @media only screen and (max-width: 770px) {
   .yourBeer {

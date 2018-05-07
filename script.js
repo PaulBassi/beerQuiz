@@ -161,19 +161,19 @@ $(function () {
         //sets randomBeer equal to finalBeer and has corresponsing 
         if (randomBeer == 'ace') { 
             finalBeer = "Ace Hill Pilsner",
-            finalBeerWhy = "You're a minimalist, you like simple, Ace Hill is simple. Enjoy" };
+            finalBeerWhy = "You're a minimalist, you like simplicity, Ace Hill is uncomplicated in the best ways and leads with earthy aromas. Enjoy the steadiness of a refined meidum-bodied beer from start to finish. It's easy drinking from here on out." };
 
         if (randomBeer == 'mgd') { 
             finalBeer= "Miller Genuine Draft", 
-            finalBeerWhy = "You live the street life and dont take no shit, enoy an MGD" };
+            finalBeerWhy = "Your attitude says it all, and your beer should keep up with your street savvy. Underpinned with light citrus notes and smooth malt aromas, it's light but packs a punch and that's just what you need after a long day. Enjoy a refreshing cold one." };
 
         if (randomBeer == 'pabst') { 
             finalBeer = "Pabst Blue Ribbon", 
-            finalBeerWhy = "You're a hipster and like hipster shit. So you should have a Pabst" };
+            finalBeerWhy = "You're known for being outside the box and redefining youself. Nothing is more alternative than the delicate malt aromas spiced with hints of banana topped off with a golden frothy mousse that's oh so refreshing. So you should have a Pabst" };
 
         if (randomBeer == 'heineken') {
             finalBeer ="Heineken", 
-            finalBeerWhy = "You like realiable shit, you're a professional, enjoy your Heineken." 
+            finalBeerWhy = "You want your beer as reliable as you are in the board room. Take a sip of a time honoured classic and revel in the fact that you've made another solid deal once again. So, go ahead, enjoy your Heineken." 
         };
 
 
