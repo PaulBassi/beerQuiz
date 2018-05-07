@@ -139,6 +139,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   background: #605856; }
 
+@media only screen and (max-width: 920px) {
+  .wrapper {
+    width: 95%; } }
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
@@ -154,7 +158,24 @@ h3 {
   font-size: 20px;
   font-size: 2rem; }
 
-/* QUIZ INTRO STYLES */
+@media only screen and (max-width: 1220px) {
+  h1 {
+    font-size: 30px;
+    font-size: 3rem; }
+  h2 {
+    font-size: 16px;
+    font-size: 1.6rem; } }
+
+@media only screen and (max-width: 560px) {
+  h3 {
+    font-size: 16px;
+    font-size: 1.6rem; } }
+
+@media only screen and (max-width: 445px) {
+  h3 {
+    font-size: 14px;
+    font-size: 1.4rem; } }
+
 .quizIntro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,13 +203,33 @@ h3 {
   width: 100%; }
 
 button.start {
-  width: 200px;
-  height: 50px;
-  font-size: 18px;
-  font-size: 1.8rem;
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  font-size: 1.6rem;
   color: #1b1b1e;
   background: #d5a021;
-  border: none; }
+  border: none;
+  margin-top: 5%; }
+
+@media only screen and (max-width: 770px) {
+  .quizIntro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .introStart {
+    width: 100%;
+    text-align: center; }
+  .introImage {
+    width: 60%; } }
+
+@media only screen and (max-width: 430px) {
+  .introImage {
+    width: 80%; } }
 
 .question1 {
   display: -webkit-box;
@@ -220,8 +261,8 @@ button.start {
     list-style: none; }
     .questionText ul li {
       font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-      font-size: 1.4rem;
+      font-size: 12px;
+      font-size: 1.2rem;
       margin-bottom: 5%;
       display: block; }
 
@@ -232,7 +273,7 @@ button.start {
 
 button.next1, button.next2, button.next3, button.next4, input.submitButton {
   width: 180px;
-  height: 50px;
+  height: 40px;
   font-size: 16px;
   font-size: 1.6rem;
   color: #1b1b1e;
@@ -256,16 +297,45 @@ label::before {
   position: relative;
   margin-right: 10px;
   margin-left: -43px;
-  margin-bottom: none;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
+  margin-bottom: none; }
 
 label {
   margin-bottom: 5px; }
 
 input[type=radio]:checked ~ ::before {
   background: #d5a021; }
+
+@media only screen and (max-width: 1285px) {
+  .questionText li {
+    font-size: 10px;
+    font-size: 1rem; } }
+
+@media only screen and (max-width: 920px) {
+  h3 {
+    margin: 2% 0 0 0; }
+  .questionTextImage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .questionTextImage .questionText {
+      width: 70%; }
+    .questionTextImage .questionImage {
+      width: 50%; } }
+
+@media only screen and (max-width: 445px) {
+  h3 {
+    margin: 2% 0 2% 0; }
+  .questionImage {
+    display: none; }
+  .questionText ul {
+    padding: 1%; } }
 
 .yourBeer {
   display: -webkit-box;
@@ -287,6 +357,20 @@ input[type=radio]:checked ~ ::before {
   width: 40%;
   margin-right: 5%; }
 
+.shareSubmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .shareSubmit .reset {
+    margin-bottom: 5%; }
+
 .resultImage {
   width: 60%; }
   .resultImage img {
@@ -297,6 +381,30 @@ button.reset {
   height: 50px;
   font-size: 18px;
   font-size: 1.8rem;
-  color: #1b1b1e;
-  background: #d5a021;
-  border: none; }
+  color: #d5a021;
+  background: #1b1b1e;
+  border: none;
+  margin-top: 20%; }
+
+@media only screen and (max-width: 770px) {
+  .yourBeer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .resultText {
+    width: 100%;
+    text-align: center; }
+  .shareSubmit {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .resultImage {
+    width: 60%; } }
+
+@media only screen and (max-width: 430px) {
+  .introImage {
+    width: 80%; } }

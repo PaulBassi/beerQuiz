@@ -13,3 +13,27 @@ h3 {
     @include fontSize(20);    
 }
 
+// RESPONSIVE MEDIA QUERIES
+
+@media only screen and (max-width: 1220px) {
+    h1 {
+        @include fontSize(30);
+    }
+    h2 {
+    @include fontSize(16);
+        
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    h3 {
+    @include fontSize(16);            
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    h3 {
+    @include fontSize(14);                
+    }
+}
+

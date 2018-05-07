@@ -10,244 +10,235 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Main Page -->
+    <!-- Main Starts -->
     <main>
-        <!-- <h1>Beer Finder</h1> -->
-    </main>
-
-    <section>
-        <div class="wrapper">
-
         
-
-        <form method="POST" action="#"  id="beer-form">
-
-        <div class="quizIntro">
-            <div class="introStart">
-                <h1>Beer Finder</h1>
-
-                <h2>Find your beer-mate</h2>
+        <section>
+            <div class="wrapper">
+                <!-- Form Starts -->
+                <form method="POST" action="#"  id="beer-form">
                     
-                <p>Answer the following questions and we'll help you pick a beer.</p>
+                    <div class="quizIntro">
+                        <div class="introStart">
+                            <h1>Beer Finder</h1>
+                            
+                            <h2>Find your beer-mate</h2>
+                            
+                            <p>Answer the following questions and we'll help you pick a beer.</p>
+                            
+                            <button class="start">Start Quiz</button>
+                        </div>
+                        <div class="introImage">
+                            <img src="assets/cheers.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Question 1 -->
+                    <div class="questionWrapper question1">
+                        <h3>Where can you be found on a Friday night?</h3>
+                        
+                        <div class="questionTextImage">
+                            <div class="questionText">
+                                <ul>
+                                    <li>
+                                        <div class="radioWrap">
+                                            <input type="radio" name="where" id="sudForno" value="heineken">
+                                            <label for="sudForno">At Sud Forno</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="where" id="netflix" value="ace">
+                                        <label for="netflix">Netflix and a Cold One</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="where" id="raptors" value="mgd">
+                                        <label for="raptors">If the Raps are playing, at a sports bar. If they aren't, at a sports bar</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="where" id="boardGames" value="pabst">
+                                        <label for="boardGames">Any themed bar that has videos games or board games</label>
+                                    </li>
+                                </ul>
+                                
+                                <button class="next1">Next Question</button>
+                            </div>
+                            <div class="questionImage">
+                                <img src="assets/clink.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 2 -->
+                    <div class="questionWrapper question2">
+                        <h3>Which of these sounds the most appetizing to you right now?</h3>
+                        <div class="questionTextImage">
+                            
+                            <div class="questionText">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="food" id="tacos" value="mgd">
+                                        <label for="tacos">Braised Pulled Pork tacos on a corn tortilla with pico da Gallo</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="food" id="fishChips" value="ace">
+                                        <label for="fishChips">Beer battered fish and chips served in a newspaper cone with a side of malt vinegar</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="food" id="lobster" value="heineken">
+                                        <label for="lobster">Lobster basking in lemon herb butter with a side of mashed potatoes</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="food" id="risotto" value="pabst">
+                                        <label for="risotto">Roasted Tomato Risotto, with toasted pine nuts</label>
+                                    </li>
+                                </ul>
+                                
+                                <button class="next2">Next Question</button>
+                            </div>
+                            
+                            <div class="questionImage">
+                                <img src="assets/clink.png" alt="">
+                            </div>
+                        </div>   
+                    </div>
+                    
+                    <!-- Question 3 -->
+                    <div class="questionWrapper question3">
+                        <h3>What’s your preferred means of transportation?</h3>
+                        
+                        <div class="questionTextImage">
+                                  
+                            <div class="questionText">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="transportation" id="walking" value="ace">
+                                        <label for="walking">Walking, gotta get my steps</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="transportation" id="bicycle" value="pabst">
+                                        <label for="bicycle">Bicycle, rain or shine</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="transportation" id="driving" value="heineken">
+                                        <label for="driving">I drive myself or Uber it… these shoes weren’t made for walking</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="transportation" id="ttc" value="mgd">
+                                        <label for="ttc">TTC like a true Torontonian</label>
+                                    </li>
+                                </ul>
+                                
+                                <button class="next3">Next Question</button>
+                                
+                            </div>
+                            
+                            <div class="questionImage">
+                                <img src="assets/clink.png" alt="">
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <!-- Question 4 -->
+                    <div class="questionWrapper question4">
+                        <h3>How would you describe your sense of style?</h3>
+                        
+                        <div class="questionTextImage">
+                            <div class="questionText">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="fashion" id="jordans" value="mgd">
+                                        <label for="jordans">You think Jordan’s are appropriate footwear for all occasions</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="fashion" id="colors" value="ace">
+                                        <label for="colors">Who needs colors?</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="fashion" id="walkman" value="pabst">
+                                        <label for="walkman">Your eyeglasses have a prescription of 0 and you traded in your iPod touch for a Walkman</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="fashion" id="sweats" value="heineken">
+                                        <label for="sweats">You would never leave your house in sweats and are offended by those who do</label>
+                                    </li>
+                                </ul>
+                                
+                                <button class="next4">Next Question</button>
+                                
+                            </div>
+                            
+                            <div class="questionImage">
+                                <img src="assets/clink.png" alt="">
+                            </div>  
+                        </div>
+                    </div>
+                    
+                    <!-- Question 5 -->
+                    <div class="questionWrapper question5">
+                        <h3>Out of the people below, who would you choose to drink with?</h3>
+                        
+                        <div class="questionTextImage">
+                            <div class="questionText">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="drinkingBuddy" id="neil" value="heineken">
+                                        <label for="neil">Neil deGrasse Tyson</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="drinkingBuddy" id="cardi" value="mgd">
+                                        <label for="cardi">Cardi B</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="drinkingBuddy" id="kondo" value="ace">
+                                        <label for="kondo">Marie Kondo</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="drinkingBuddy" id="hemingway" value="pabst">
+                                        <label for="hemingway">Ernest Hemingway</label>
+                                    </li>
+                                </ul>   
+                                
+                                <input type="submit" class="submitButton">
+                            </div>
+                            
+                            <div class="questionImage">
+                                <img src="assets/clink.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="yourBeer">
+                        <div class="resultText">
+                            <h1>Beer Finder</h1>
+                            
+                            <h2 class="finalBeer"></h2>
+                            
+                            <p class="beerPara"></p>
+                            
+                            <div class="shareSubmit">
+                                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="I finally found my beer-mate! Thanks @PaulBassi66 " data-url="https://www.pbassi.com" data-hashtags="beermates" data-show-count="false">Tweet</a>
+                                
+                                
+                                <button class="reset">Start Again</button>
+                            </div>
+                            
+                        </div>
+                        <div class="resultImage">
+                            <img src="assets/cheers.png" alt="">
+                        </div>
+                    </div>
+                    
+                    
+                </form>
+                <!-- Form Ends -->
+            </div>
+        </section>
         
-                <button class="start">Start Quiz</button>
-            </div>
-            <div class="introImage">
-                <img src="assets/cheers.png" alt="">
-            </div>
-        </div>
-
         
-    <!-- Question 1 -->
-        <div class="questionWrapper question1">
-            <h3>Where can you be found on a Friday night?</h3>
-
-            <div class="questionTextImage">
-                <div class="questionText">
-                        <ul>
-                            <li>
-                                <div class="radioWrap">
-                                    <input type="radio" name="where" id="sudForno" value="heineken">
-                                    <label for="sudForno">At Sud Forno</label>
-                                </div>
-                            </li>
-                            <li>
-                                <input type="radio" name="where" id="netflix" value="ace">
-                                <label for="netflix">Netflix and a Cold One</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="where" id="raptors" value="mgd">
-                                <label for="raptors">If the Raps are playing, at a sports bar. If they aren't, at a sports bar</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="where" id="boardGames" value="pabst">
-                                <label for="boardGames">Any themed bar that has videos games or board games</label>
-                            </li>
-                        </ul>
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
         
-                        <button class="next1">Next Question</button>
-                </div>
-                <div class="questionImage">
-                    <img src="assets/clink.png" alt="">
-                </div>
-
-            </div>
-        </div>
-
-    <!-- Question 2 -->
-        <div class="questionWrapper question2">
-            <h3>Which of these sounds the most appetizing to you right now?</h3>
-            <div class="questionTextImage">
-
-                <div class="questionText">
-                    <ul>
-                        <li>
-                            <input type="radio" name="food" id="tacos" value="mgd">
-                            <label for="tacos">Braised Pulled Pork tacos on a corn tortilla with pico da Gallo</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="food" id="fishChips" value="ace">
-                            <label for="fishChips">Beer battered fish and chips served in a newspaper cone with a side of malt vinegar</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="food" id="lobster" value="heineken">
-                            <label for="lobster">Lobster basking in lemon herb butter with a side of mashed potatoes</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="food" id="risotto" value="pabst">
-                            <label for="risotto">Roasted Tomato Risotto, with toasted pine nuts</label>
-                        </li>
-                    </ul>
-    
-                    <button class="next2">Next Question</button>
-                </div>
-
-                <div class="questionImage">
-                    <img src="assets/clink.png" alt="">
-                </div>
-             </div>   
-        </div>
-
-    <!-- Question 3 -->
-        <div class="questionWrapper question3">
-            <h3>What’s your preferred means of transportation?</h3>
-
-            <div class="questionTextImage">
-            
-
-            <div class="questionText">
-                <ul>
-                    <li>
-                        <input type="radio" name="transportation" id="walking" value="ace">
-                        <label for="walking">Walking, gotta get my steps</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="transportation" id="bicycle" value="pabst">
-                        <label for="bicycle">Bicycle, rain or shine</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="transportation" id="driving" value="heineken">
-                        <label for="driving">I drive myself or Uber it… these shoes weren’t made for walking</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="transportation" id="ttc" value="mgd">
-                        <label for="ttc">TTC like a true Torontonian</label>
-                    </li>
-                </ul>
-
-                <button class="next3">Next Question</button>
-
-            </div>
-
-            <div class="questionImage">
-                <img src="assets/clink.png" alt="">
-            </div>
-
-            </div>
-                
-        </div>
-
-        <!-- Question 4 -->
-        <div class="questionWrapper question4">
-            <h3>How would you describe your sense of style?</h3>
-
-            <div class="questionTextImage">
-                <div class="questionText">
-                    <ul>
-                        <li>
-                            <input type="radio" name="fashion" id="jordans" value="mgd">
-                            <label for="jordans">You think Jordan’s are appropriate footwear for all occasions</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="fashion" id="colors" value="ace">
-                            <label for="colors">Who needs colors?</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="fashion" id="walkman" value="pabst">
-                            <label for="walkman">Your eyeglasses have a prescription of 0 and you traded in your iPod touch for a Walkman</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="fashion" id="sweats" value="heineken">
-                            <label for="sweats">You would never leave your house in sweats and are offended by those who do</label>
-                        </li>
-                    </ul>
-                
-                    <button class="next4">Next Question</button>
-    
-                </div>
-    
-                <div class="questionImage">
-                    <img src="assets/clink.png" alt="">
-                </div>
-                
-            </div>
-
+        <script src="script.js"></script>
         
-        </div>
-
-    <!-- Question 5 -->
-        <div class="questionWrapper question5">
-            <h3>Out of the people below, who would you choose to drink with?</h3>
-            
-            <div class="questionTextImage">
-            <div class="questionText">
-                <ul>
-                    <li>
-                        <input type="radio" name="drinkingBuddy" id="neil" value="heineken">
-                        <label for="neil">Neil deGrasse Tyson</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="drinkingBuddy" id="cardi" value="mgd">
-                        <label for="cardi">Cardi B</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="drinkingBuddy" id="kondo" value="ace">
-                        <label for="kondo">Marie Kondo</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="drinkingBuddy" id="hemingway" value="pabst">
-                        <label for="hemingway">Ernest Hemingway</label>
-                    </li>
-                </ul>   
-    
-                <input type="submit" class="submitButton">
-            </div>
-
-            <div class="questionImage">
-                <img src="assets/clink.png" alt="">
-            </div>
-
-            </div>
-        </div>
-
-        <div class="yourBeer">
-            <div class="resultText">
-                <h1>Beer Finder</h1>
-        
-                <h2>Find your beer-mate</h2>
-        
-                <p class="beerPara"></p>
-        
-                <button class="reset">Start Again</button>
-            </div>
-            <div class="resultImage">
-                <img src="assets/cheers.png" alt="">
-            </div>
-        </div>
-
-        
-    </form>
-    </div>
-    </section>
-
-    
-
-    
-
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-
-    <script src="script.js"></script>
-
-
+    </main>
 </body>
 </html>

@@ -1,13 +1,10 @@
 .question1 {
     display: flex;
     flex-direction: column;
-    // justify-content: flex-end;
-    // align-items: center;
 }
 
 .questionWrapper h3 {
     color: $yellow;
-    // margin: 5% 0 0 0;
     text-align: center;
 }
 
@@ -25,10 +22,9 @@
         list-style: none;
         li {
             font-family: 'Open Sans', sans-serif;
-            @include fontSize(14);
+            @include fontSize(12);
             margin-bottom: 5%;
             display: block;
-            // display: flex;
         }
     }
 }
@@ -43,7 +39,7 @@
 
 button.next1, button.next2, button.next3, button.next4, input.submitButton{
     width: 180px;
-    height: 50px;
+    height: 40px;
     @include fontSize(16);
     color: $black;
     background: $yellow;
@@ -51,49 +47,73 @@ button.next1, button.next2, button.next3, button.next4, input.submitButton{
 }
 
 
-  input[type="radio"] {
-    visibility: hidden;
-    float: left;
-    // margin-top: 10%;
-  }
+input[type="radio"] {
+  visibility: hidden;
+  float: left;
+}
 
-  label {
-    //   margin-left: 5%;
-    //   display: block;
-  }
-
-  input[type=radio]:checked ~ label {
-    color: $yellow;
-    // text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1);
-  }
+input[type=radio]:checked ~ label {
+  color: $yellow;
+}
 
 
-  label:hover {
-    // color: grey;
-  }
+label::before {
+  display: inline-block;
+  content: "";
+  border: 5px solid black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+  margin-left: -43px;
+  margin-bottom: none;
+}
 
-  label::before {
-    display: inline-block;
-    content: "";
-    border: 5px solid black;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: relative;
-    margin-right: 10px;
-    margin-left: -43px;
-    margin-bottom: none;
-    transition: all 0.4s ease-in-out;
-  }
-
-  label {
-    margin-bottom: 5px;
-  }
-
-  label:hover:before {
-    // border: 5px solid grey;
-  }
-
+label {
+  margin-bottom: 5px;
+}
 
 input[type=radio]:checked ~ ::before {
   background: $yellow }
+
+
+  // RESPONSIVE MEDIA QUERIES
+
+@media only screen and (max-width: 1285px) {
+  .questionText li {
+    @include fontSize(10);
+  }
+}  
+
+@media only screen and (max-width: 920px) {
+  h3 {
+    margin: 2% 0 0 0;
+  }
+
+  .questionTextImage {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    .questionText {
+      width: 70%;
+    }
+    .questionImage {
+      width: 50%;
+    }
+  }  
+}
+
+@media only screen and (max-width: 445px) {
+  h3 {
+    margin: 2% 0 2% 0;
+  }
+
+  .questionImage {
+    display: none;
+  }
+
+  .questionText ul {
+    padding: 1%;
+  }
+}

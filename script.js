@@ -160,7 +160,7 @@ $(function () {
 
         //sets randomBeer equal to finalBeer and has corresponsing 
         if (randomBeer == 'ace') { 
-            finalBeer = "Ace Hill",
+            finalBeer = "Ace Hill Pilsner",
             finalBeerWhy = "You're a minimalist, you like simple, Ace Hill is simple. Enjoy" };
 
         if (randomBeer == 'mgd') { 
@@ -176,9 +176,32 @@ $(function () {
             finalBeerWhy = "You like realiable shit, you're a professional, enjoy your Heineken." 
         };
 
+
+        $('.finalBeer').html(`${finalBeer}`);
         
         $('.beerPara').html(`You should have a ${finalBeer}! ${finalBeerWhy}`)
-        console.log(randomBeer + result2);
+        // console.log(randomBeer + result2);
+
+        //  < !--TWITTER WIDGET -->
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+            return t;
+        }(document, "script", "twitter-wjs"));
+
+
+
+
 
         $('.reset').on('click', function (e) {
             e.preventDefault();
@@ -190,3 +213,4 @@ $(function () {
     
     });//end of form submit
 });//end of document ready
+
