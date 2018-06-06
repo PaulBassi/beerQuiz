@@ -1,11 +1,15 @@
 .questionWrapper {
-  height: 900px;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .questionWrapper h3 {
     color: $yellow;
     text-align: center;
     margin-bottom: 5%;
+    margin-top: 0;
 }
 
 .questionTextImage {
@@ -15,9 +19,9 @@
 
 .questionText {
     width: 40%;
-    margin-right: 2%;
     ul {
         margin: 0;
+        margin-left: 8%;
         padding: 0 0 10% 0;
         list-style: none;
         li {
@@ -95,21 +99,34 @@ input[type=radio]:checked ~ ::before {
 }  
 
 @media only screen and (max-width: 920px) {
+  header {
+    margin-bottom: 5px;
+  }
   h3 {
-    margin: 2% 0 0 0;
+    @include fontSize(18);    
   }
 
   .questionTextImage {
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     .questionText {
       width: 70%;
+      ul {
+        padding: 0 0 0 0;
+      }
     }
     .questionImage {
-      width: 50%;
+      width: 40%;
     }
   }  
+}
+
+@media only screen and (max-width: 770px) {
+  .questionWrapper {
+    justify-content: flex-start;
+    margin-top: 5%;
+  }
 }
 
 @media only screen and (max-width: 445px) {

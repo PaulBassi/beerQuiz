@@ -133,7 +133,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 .wrapper {
-  width: 80%;
+  width: 70%;
   margin: 0 auto; }
 
 body {
@@ -176,6 +176,18 @@ h3 {
     font-size: 14px;
     font-size: 1.4rem; } }
 
+header {
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  header img.logo {
+    width: 40px;
+    margin-left: 15%; }
+
 .quizIntro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,7 +195,10 @@ h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 93vh; }
   .quizIntro h1 {
     margin: 0;
     padding: 0; }
@@ -194,10 +209,21 @@ h3 {
 
 .introStart {
   width: 40%;
-  margin-right: 5%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .introImage {
-  width: 60%; }
+  width: 60%;
+  -o-object-fit: contain;
+  object-fit: contain; }
 
 .introImage img {
   width: 100%; }
@@ -218,9 +244,10 @@ button.start {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 5%; }
   .introStart {
     width: 100%;
     text-align: center; }
@@ -232,12 +259,23 @@ button.start {
     width: 80%; } }
 
 .questionWrapper {
-  height: 900px; }
+  height: 93vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .questionWrapper h3 {
   color: #d5a021;
   text-align: center;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  margin-top: 0; }
 
 .questionTextImage {
   display: -webkit-box;
@@ -248,10 +286,10 @@ button.start {
   align-items: center; }
 
 .questionText {
-  width: 40%;
-  margin-right: 2%; }
+  width: 40%; }
   .questionText ul {
     margin: 0;
+    margin-left: 8%;
     padding: 0 0 10% 0;
     list-style: none; }
     .questionText ul li {
@@ -315,8 +353,11 @@ input[type=radio]:checked ~ ::before {
     font-size: 1rem; } }
 
 @media only screen and (max-width: 920px) {
+  header {
+    margin-bottom: 5px; }
   h3 {
-    margin: 2% 0 0 0; }
+    font-size: 18px;
+    font-size: 1.8rem; }
   .questionTextImage {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -325,13 +366,22 @@ input[type=radio]:checked ~ ::before {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
     .questionTextImage .questionText {
       width: 70%; }
+      .questionTextImage .questionText ul {
+        padding: 0 0 0 0; }
     .questionTextImage .questionImage {
-      width: 50%; } }
+      width: 40%; } }
+
+@media only screen and (max-width: 770px) {
+  .questionWrapper {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-top: 5%; } }
 
 @media only screen and (max-width: 445px) {
   h3 {
@@ -348,7 +398,7 @@ input[type=radio]:checked ~ ::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh; }
+  height: 93vh; }
   .yourBeer h1 {
     margin: 0;
     padding: 0; }
@@ -396,9 +446,10 @@ button.reset {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 5%; }
   .resultText {
     width: 100%;
     text-align: center; }

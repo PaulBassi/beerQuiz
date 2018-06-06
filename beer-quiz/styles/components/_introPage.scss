@@ -1,7 +1,8 @@
 .quizIntro {
     display: flex;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    height: 93vh;
     h1 {
         margin: 0;
         padding: 0;
@@ -15,11 +16,16 @@
 
 .introStart {
     width: 40%;
-    margin-right: 5%;
+    // margin-right: -5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .introImage {
     width: 60%;
+    // margin-left: -5%;
+    object-fit: contain;
 }
 
 .introImage img {
@@ -42,7 +48,8 @@ button.start {
 @media only screen and (max-width: 770px) {
     .quizIntro {
         flex-direction: column-reverse;
-        justify-content: center;
+        justify-content: flex-end;
+        margin-top: 5%;
     }
 
     .introStart {

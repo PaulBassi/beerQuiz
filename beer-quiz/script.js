@@ -99,6 +99,7 @@ $(function () {
         const transportation = $('input[name=transportation]:checked').val();     
         const fashion = $('input[name=fashion]:checked').val();
         const drinkingBuddy = $('input[name=drinkingBuddy]:checked').val();
+
         
         console.log(where, food, transportation, fashion, drinkingBuddy);
 
